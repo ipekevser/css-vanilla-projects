@@ -1,0 +1,209 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+	box-sizing: border-box;
+}
+.content {
+    margin: 100px auto;
+    border:1px solid black;
+    width: 375px;
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+	font-family: 'Bai Jamjuree', sans-serif;
+	font-size:18px;
+}
+.logo{
+	margin:5rem auto 2rem;
+	width: 35%;
+}
+h1 {
+	font-weight: bold;
+	font-size:36px;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.672);
+}
+h2 {
+	font-weight: bold;
+	font-size:26px;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.672);
+	margin-top: 5rem;
+}
+img{
+	border: 1px solid black;
+	max-width: 100%;
+	box-sizing:border-box;
+	padding: 2rem;
+	display: block;
+	margin: 0 auto;
+}
+button{
+	padding:1.3rem 3rem;
+	border-radius: 2rem;
+	display: block;
+	margin: 1.8rem auto;
+}
+.ios{
+	border: 1px solid hsl(171, 66%, 44%);
+	background-color: hsl(171, 66%, 44%) ;
+}
+.mac {
+	border: 1px solid hsl(233, 100%, 69%);
+	background-color:hsl(233, 100%, 69%);
+}
+p{
+	padding: 1.8rem;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.412);
+	margin-bottom: 2rem;
+}
+h3{
+	text-align: center;
+	font-weight:600;
+	font-size: 22px;
+	color: rgba(0, 0, 0, 0.775);
+	margin-top:2.2rem;
+}
+a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+.socialLogos{
+	display:flex;
+}
+@media (min-width: 700px) and (orientation: landscape) {
+	.content {
+		width: 80%;
+		background-image: url(images/bg-header-desktop.png);
+		background-repeat: no-repeat;
+		border: 1px solid black;
+		overflow: hidden;
+	}
+	.logo {
+		width: 15%;
+		min-width:fit-content;
+	}
+	.buttons {
+		display: flex;
+		width:55%;
+		min-width: max-content;
+		margin:auto;
+		border: 1px solid black;
+	}
+	.firstContainer {
+		display: flex;
+		border: 1px solid black;
+	}
+	.left{
+		display:flex;
+		width:120%;
+	}
+	.right{
+		border: 1px solid black;
+		width:80%;
+	}
+	.right p {
+		text-align:start
+	}
+	.left img {
+		border: 1px solid red;
+		margin: auto -60px;
+		padding: 0;
+	}
+	p{
+		border: 1px solid black;
+		margin: 0 auto;
+		width:80%;
+	}
+	.thirdContainer {
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.one, .two, .three {
+		border: 1px solid purple;
+		width: 33%;
+		margin: 2rem auto 4rem;
+	}
+	.businessLogo{
+		border: 1px solid red;
+		display: flex;
+		flex-direction:row;
+	}
+	.businessLogo img{
+		padding: 1rem;
+		margin:1rem;
+		min-width: 10%;
+		width:100%;
+	}
+	.footer{
+		border: 1px solid green;
+		display:flex;
+		background-color: rgba(209, 201, 201, 0.412);
+	}
+	.footer .logo{
+		border: 1px solid pink;
+		width:20%;
+		min-width: 70px;
+		margin: auto;
+	}
+	.socialLogos{
+		display:flex;
+		align-items: center;
+		width:20%;
+		max-width: 50px;
+		
+	}
+	.footerSigns {
+		border: 1px solid black;
+		display:flex;
+		flex-wrap: wrap;
+		gap: 2rem;
+		margin: auto;
+		width:30%;
+	}
+}
